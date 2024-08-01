@@ -33,7 +33,7 @@ class StarWarsPerson(Base):
     birth_year: Mapped[str] = mapped_column(String(128), nullable=False)
     eye_color: Mapped[str] = mapped_column(String(128), nullable=False)
     films: Mapped[str] = mapped_column(String(512), nullable=False)
-    gender: Mapped[str] = mapped_column(String(10), nullable=False)
+    gender: Mapped[str] = mapped_column(String(32), nullable=False)
     hair_color: Mapped[str] = mapped_column(String(32), nullable=False)
     height: Mapped[str] = mapped_column(String(128), nullable=False)
     homeworld: Mapped[str] = mapped_column(String(128), nullable=False)
